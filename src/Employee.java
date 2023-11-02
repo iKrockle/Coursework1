@@ -1,9 +1,9 @@
 public class Employee {
-    int id = Main.id;
+    private final int id = Main.id;
 
-    String fio;
-    int job;
-    double salary;
+    private final String fio;
+    private int job;
+    private double salary;
 
     Employee(String inFio, int inJob, double inSalary)
     {
@@ -39,6 +39,6 @@ public class Employee {
     @Override
     public String toString() {
         return "ID=" + getId() + " ФИО:" + getFio() + " отдел:" +
-                getJob() + " зарплата:" + getSalary();
+                getJob() + String.format(" зарплата:%.2f",getSalary());
     }
 }
