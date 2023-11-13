@@ -29,3 +29,5 @@ bin/
 .DS_Store
 /Coursework.iml
 /.idea/
+/qodana.yaml
+/Coursework1.iml
