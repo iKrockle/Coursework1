@@ -1,12 +1,13 @@
 public class Employee {
-    private final int id = Main.id;
+    private final int id;
 
     private final String fio;
     private int job;
     private double salary;
 
-    Employee(String inFio, int inJob, double inSalary)
+    Employee(int inId, String inFio, int inJob, double inSalary)
     {
+        id = inId;
         fio = inFio;
         job = inJob;
         salary = inSalary;

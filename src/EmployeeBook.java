@@ -3,7 +3,7 @@ public class EmployeeBook {
     private int  id = 1;
 
     public void addEmployee(String fio, int job, double sal){
-        Employee employee = new Employee(fio,job,sal);
+        Employee employee = new Employee(id,fio,job,sal);
         for (int i=0;i<empArray.length;i++){
             if (empArray[i]==null) {
                 empArray[i] = employee;
